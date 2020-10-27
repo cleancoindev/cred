@@ -1,23 +1,23 @@
 {
-  "name": "template-instance",
+  "name": "cred",
   "version": "0.1.0",
-  "description": "A template repo for creating a SourceCred instance",
-  "repository": "git@github.com:sourcecred/template-instance.git",
-  "author": "SourceCred Team <contact@sourcecred.io>",
+  "description": "Gitcoin's Cred Instance",
+  "repository": "git@github.com:gitcoinco/cred.git",
+  "author": "Gitcoin https://github.com/gitcoinco",
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "sourcecred-gitcoin-demo": "0.7.1"
+    "sourcecred": "^0.7.1"
   },
   "scripts": {
     "clean": "rimraf cache site",
     "clean-all": "yarn clean && rimraf output",
-    "load": "sourcecred-gitcoin-demo load",
-    "graph": "sourcecred-gitcoin-demo graph",
-    "score": "sourcecred-gitcoin-demo score",
-    "site": "sourcecred-gitcoin-demo site",
-    "serve": "sourcecred-gitcoin-demo serve",
-    "grain": "sourcecred-gitcoin-demo grain"
+    "load": "sourcecred load",
+    "graph": "sourcecred graph",
+    "score": "sourcecred score",
+    "site": "sourcecred site",
+    "serve": "sourcecred serve",
+    "grain": "sourcecred grain"
   },
   "devDependencies": {
     "rimraf": "^3.0.2"
