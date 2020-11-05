@@ -17,8 +17,6 @@ You should have received a copy of the GNU Affero General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 END
 
-set -e
-
 source $(dirname $0)/compute-cred.bash
 
 echo "- Distribute Grain 💸"; yarn grain > grain_output.txt
