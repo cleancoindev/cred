@@ -1,0 +1,7 @@
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+## GENERATE CRED INSTANCE (EVERY 6 HOURS)
+0 */6 * * * cd cred; bash generate-instance.bash >> /var/log/gitcoin/cred.log  2>&1
+
+## DISTRIBUTE GRAIN (EVERY SUNDAY: 00:05 UTC, 16:05 PST)
+5 0 * * 0 cd cred; bash distribute-grain.bash >> /var/log/gitcoin/cred.log  2>&1
