@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "sourcecred": "git+https://github.com/sourcecred/sourcecred#master"
+    "sourcecred": "git+https://github.com/gitcoinco/sourcecred#master"
   },
   "scripts": {
     "clean": "rimraf cache site",
